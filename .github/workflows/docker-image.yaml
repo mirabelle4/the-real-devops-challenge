@@ -35,7 +35,7 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/python-webserver:latest  # Replace 'myapp' with your image name
-        file: ../../Dockerfile  # Path to your Dockerfile
+        file: ../../challenge-1/Dockerfile  # Path to your Dockerfile
 
     # Verify the image was pushed successfully
     - name: Image details
