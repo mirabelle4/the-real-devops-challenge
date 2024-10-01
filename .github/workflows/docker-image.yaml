@@ -37,8 +37,9 @@ jobs:
         tags: ${{ secrets.DOCKER_USERNAME }}/python-webserver:latest  # Replace 'myapp' with your image name
         file: challenge-1/Dockerfile  # Path to your Dockerfile
     
-    - name: Wait for Docker Hub sync
-      run: sleep 10  
+    - name: Pull Docker image
+      run: docker pull ${{ secrets.DOCKER_USERNAME }}/python-webserver:latest
+  
     
     # Verify the image was pushed successfully
     - name: Image details
