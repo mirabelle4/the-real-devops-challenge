@@ -39,5 +39,5 @@ jobs:
 
     # Verify the image was pushed successfully
     - name: Image details
-      run: docker image inspect ${{ secrets.DOCKER_USERNAME }}/myapp:latest
+      run: docker image inspect ${{ secrets.DOCKER_USERNAME }}/python-webserver:latest
 
