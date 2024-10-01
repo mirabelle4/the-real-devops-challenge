@@ -1,4 +1,4 @@
-the-real-devops-challenge/# Use a minimal Python base image
+# Use a minimal Python base image
 FROM python:3.9-slim
 
 # Set environment variables
