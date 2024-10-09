@@ -32,7 +32,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
-        context: .
+        context: challenge-1/
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/python-webserver:latest  # Replace 'myapp' with your image name
         file: challenge-1/Dockerfile  # Path to your Dockerfile
