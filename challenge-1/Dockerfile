@@ -11,10 +11,10 @@ RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
 WORKDIR /app
 
 # Copy the current directory content into the container
-COPY . /app
+COPY index.py /app
 
 # Install necessary dependencies (if any)
-RUN pip install --no-cache-dir -r requirements.txt || true
+# RUN pip install --no-cache-dir -r requirements.txt || true
 
 # Change ownership of the working directory to the non-root user
 RUN chown -R appuser:appgroup /app
