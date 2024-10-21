@@ -11,7 +11,7 @@ RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
 WORKDIR /app
 
 # Copy the current directory content into the container
-COPY index.py /app
+COPY . /app
 
 # Install necessary dependencies (if any)
 # RUN pip install --no-cache-dir -r requirements.txt || true
